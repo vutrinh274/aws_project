@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: adventures
+    database: dbt_raw
+    schema: public
+    meta:
+      source: "adventures"
+    tables:
+      - name: products
+      - name: product_categories
+      - name: product_subcategories
+      - name: sales
+      - name: territories

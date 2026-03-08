@@ -1,0 +1,40 @@
+
+version: 2
+
+models:
+  - name: stg_product_categories
+    columns:
+      - name: product_category_key
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_product_subcategories
+    columns:
+      - name: product_subcategory_key
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_products
+    columns:
+      - name: product_key
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_sales
+    columns:
+      - name: order_date
+        data_tests:
+          - not_null
+      - name: stock_date
+        data_tests:
+          - not_null
+          
+  - name: stg_territories
+    columns:
+      - name: sales_territory_key
+        data_tests:
+          - unique
+          - not_null
